@@ -1,0 +1,6 @@
+# For visibilitiy I am not going to exclude the files below. However, to exclude them in a production environment, 
+# I would add them to the .gitignore file.
+
+# .env (I used sample.env instead)
+# pg_hba.conf
+# postgresql.conf

@@ -17,3 +17,9 @@ Volunteers also discovered that the school wrote some scripts to generate demogr
 Good luck. The school is counting on you!
 
 > NOTE: If you'd like to checkout the sample code we were provided with checkout the sample branch.
+
+## Actions 
+- Secure the database with RBAC, see [secure.sql](./secure.sql). 
+- Tighten PostgreSQL security configuration, see [postgresql.conf](./postgresql.conf) and [pg_hba.conf](./pg_hba.conf)
+- Implement environment variables, see [sample.env](./sample.env) and [demographics.js](./demographics.js)
+- Prevent uploading sensitive information, see [.gitignore](./.gitignore)

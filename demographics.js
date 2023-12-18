@@ -1,14 +1,14 @@
 import { getData } from "./data/database-api.js";
 
 // Import the dotenv package
-
+import dotenv from "dotenv";
 
 // Inject environment variables
-
+dotenv.config();
 
 // Returns student and teacher data using the API key
-const student_data = getData("student", "gVvzJqrWLL6MXLzHeHERnKp");
-const teacher_data = getData("teacher", "zsi9DeEcewB7MsgzPy2zxsp");
+const student_data = getData("student", process.env.POSTGRES_API_KEY);
+const teacher_data = getData("teacher", process.env.DISTRICT_API_KEY);
 
 // Output student data if no error has occurred
 if (student_data !== 0 || (typeof(student_data) === "object" && Object.keys(student_data).length !== 0)) {
